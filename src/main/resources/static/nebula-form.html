@@ -36,21 +36,34 @@
             <label for="otro">Otro</label>
             <br><br>
 
-            <label>Suscripción</label>
-            <select id="gratis" name="suscripcion" >Gratis</select>
+            <label for="subscripcion">Subscripción:</label>
+            <select id="subscripcion" name="sel_subscripcion">
+                <option value="gratis">Gratis</option>
+                <option value="mensual">Mensual</option>
+                <option value="anual">Anual</option>
+            </select>
 
 
             <br><br>
-            <label for="fechaNacimiento">Fecha Nacimiento:</label>
-            <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha" name="fechaNacimiento">
             <br><br>
 
-            <label for="chk_terminos">Términos</label>
-            <input type="checkbox" id="chk_terminos" name="chk_terminos">
+<!--            <label for="terminos">Términos</label>-->
+            <input type="checkbox" id="terminos" name="chk_terminos" value="aceptado">
+            <label for="terminos">Acepto los terminos y condiciones</label>
             <br><br>
 
             <label for="comentarios">Comentarios:</label>
-            <textarea id="comentarios" name="comentarios"></textarea>
+            <br>
+            <textarea
+                id="comentarios"
+                name="comentarios"
+                rows="4" cols="40"
+                placeholder="Escribe aqui tus comentarios..."></textarea>
+
+            <input type="submit">
+            <input type="reset">
             <br><br>
         </form>
     </section>
